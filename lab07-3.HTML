@@ -1,0 +1,54 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+<body>
+    <h1>Анкета</h1>
+
+    <form action="process.php" method="post">
+        <div class="form-group">
+            <label for="surname">Прізвище:</label>
+            <input type="text" id="surname" name="surname" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Ім'я, по батькові:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="birthday">Дата народження:</label>
+            <input type="date" id="birthday" name="birthday" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Домашня адреса:</label>
+            <input type="text" id="address" name="address" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="place_of_study_work">Місце навчання (роботи):</label>
+            <input type="text" id="place_of_study_work" name="place_of_study_work" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="scientific_interests">Область наукових інтересів:</label>
+            <textarea id="scientific_interests" name="scientific_interests" class="form-control" rows="5"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Відправити дані та перейти до 2 етапу реєстрації</button>
+    </form>
+</body>
+</html>
