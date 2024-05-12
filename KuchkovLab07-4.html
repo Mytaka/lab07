@@ -1,0 +1,42 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>7-4</title>
+       <style>
+          form {
+       font-size: 25px;
+         }
+         </style>
+	</head>
+	<body>
+            <form>
+                поле вводу номера банківського рахунку: <input required name="card" value="" type="text" maxlength="16"><br>
+                поле вводу особистого номера користувача: <input required name="phone" value="" type="text" maxlength="15"><br>
+                список товарів: <table>
+                <tr>
+                  <td><input type="checkbox" name="prod">Кружка</td>
+                </tr>
+                  <tr>
+                      <td><input type="checkbox" name="prod">Ложка</td>
+                </tr>
+               <tr>
+                      <td><input type="checkbox" name="prod">Ручка</td>
+              </tr>
+                <tr>
+                     <td><input type="checkbox" name="prod">Зошит</td>
+                </tr>
+                <tr>
+                <td><input type="checkbox" name="prod">Книжка</td>
+                </tr>
+                <tr>
+                <td><input type="checkbox" name="prod">Олівець</td> 
+                  </tr>
+                </table> a
+                 поле вводу довільних коментарів користувача: <textarea name="comm" rows="2" cols="50" wrap="off"></textarea><br>
+
+                 вказати  один  із  двох  видів  оплати:  готівковий  чи  безготівковий розрахунок: <input required type="radio" value="card" name="oplata">Картка <input required type="radio" value="cash" name="oplata">Готівка<br>
+                 Чи бажаєте ви отримати додаткову інформацію: <input type="checkbox" name="dod">Залишок на рахунку<input type="checkbox" name="dod">Список останніх виплат<br>
+                 <input type="submit" value="Оформити замовлення">
+            </form>
+    </body>
+</html>

@@ -1,54 +1,101 @@
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Анкета</title>
-</head>
-<body>
-    <h1>Анкета</h1>
-
-    <form action="process.php" method="post">
-        <div class="form-group">
-            <label for="surname">Прізвище:</label>
-            <input type="text" id="surname" name="surname" class="form-control" required>
-        </div>
-
-        <div class="form-group">
-            <label for="name">Ім'я, по батькові:</label>
-            <input type="text" id="name" name="name" class="form-control" required>
-        </div>
-
-        <div class="form-group">
-            <label for="birthday">Дата народження:</label>
-            <input type="date" id="birthday" name="birthday" class="form-control" required>
-        </div>
-
-        <div class="form-group">
-            <label for="address">Домашня адреса:</label>
-            <input type="text" id="address" name="address" class="form-control" required>
-        </div>
-
-        <div class="form-group">
-            <label for="place_of_study_work">Місце навчання (роботи):</label>
-            <input type="text" id="place_of_study_work" name="place_of_study_work" class="form-control" required>
-        </div>
-
-        <div class="form-group">
-            <label for="phone">Телефон:</label>
-            <input type="tel" id="phone" name="phone" class="form-control" required>
-        </div>
-
-        <div class="form-group">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" class="form-control" required>
-        </div>
-
-        <div class="form-group">
-            <label for="scientific_interests">Область наукових інтересів:</label>
-            <textarea id="scientific_interests" name="scientific_interests" class="form-control" rows="5"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Відправити дані та перейти до 2 етапу реєстрації</button>
-    </form>
-</body>
+<html>
+	<head>
+		<meta charset="utf-8">
+				<title>7-3</title>
+                <style>
+                    table {
+                        font-family: consolas;
+                        font-size: 15;
+                        border-color:rgb(226, 255, 255);
+                        background-color:#00ffff;
+                        padding: 5 5 5 5px;
+                    }
+                    td {
+                        vertical-align: top;
+                        
+                    }
+                    #but1 {
+                        margin: 15 15 7 12px;
+                    }
+                    #but2 {
+                        margin: 0 15 15 12px;
+                    }
+                    .inp {
+                        margin-left: 15px;
+                    
+                    }
+                   #anketa {
+                    font-size: 30px;
+                    font-family: 'Times New Roman', Times, serif;
+                    color: red;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                   }
+                </style>
+	</head>
+	<body>
+        <form>
+            <pre>
+                <table border="3">
+                    <tr>
+                        <th colspan="3" id="anketa">Анкета</th>
+                      </tr>
+                      <tr>
+                        <td>1.
+                        <td>Прізвище</td>
+                        <td><input class="inp" name="surname" value="" type="text" maxlength="40"></td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td>Ім'я, по-батькові</td>
+                        <td><input required class="inp" name="name" value="" type="text" maxlength="60"></td>
+                      </tr>
+                      <tr>
+                        <td>3.</td>
+                        <td>Число і рік народження</td>
+                        <td><input required class="inp" name="year" value="" type="text" maxlength="10"></td>
+                      </tr>
+                      <tr>
+                        <td>4.</td>
+                        <td>Домашня адреса</td>
+                        <td><input required class="inp" name="adres" value="" type="text" maxlength="60"></td>
+                      </tr>
+                      <tr>
+                        <td>5.</td>
+                        <td>Місце навчання (роботи)</td>
+                        <td><input required  class="inp"name="learn" value="" type="text" maxlength="60"></td>
+                      </tr>
+                      <tr>
+                        <td>6.</td>
+                        <td>Домашній (робочий) телефон</td>
+                        <td><input required class="inp" name="numb" value="" type="email" maxlength="15"></td>
+                      </tr>
+                      <tr>
+                        <td>7.</td>
+                        <td>E-mail</td>
+                        <td><input required class="inp" name="email" value="" type="text" maxlength="60"></td>
+                      </tr>
+                      <tr>
+                        <td>8.</td>
+                        <td>Область наукових інтересів</td>
+                        <td>
+                            <ol>
+                            <li><input name="inter" value="" type="text" maxlength="40"></li>
+                            <li><input name="inter" value="" type="text" maxlength="40"></li>
+                            <li><input name="inter" value="" type="text" maxlength="40"></li>
+                            <li><input name="inter" value="" type="text" maxlength="40"></li>
+                            <li><input name="inter" value="" type="text" maxlength="40"></li>
+                            <li><input name="inter" value="" type="text" maxlength="40"></li>
+                            </ol>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" height="70px"> <input id="but1" type="reset" value="Відмінити введення"> <br>
+                            <input id="but2" type="submit" value="Надіслати дані та перейти до 2 етапу реєстрації">  
+                            </td>
+                      </tr>
+                </table>
+            </pre>
+        </form>
+    </body>
 </html>
